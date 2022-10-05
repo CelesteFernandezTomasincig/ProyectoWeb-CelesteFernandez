@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.video__presentacion video {
+    display: flex;
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.imagen__presentacion img {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.titulo__primero {
+    text-align: center;
+    padding: 30px;
+}
+
+.button__contacto {
+    text-align: center;
+    padding: 20px;
+    
+}
+
+@media (max-width:770px) {
+    .logo__header img {
+        display: none;
+    }
+}
+
+.footer {
+    background-color: #cc0034;
+    display: flex;
+    padding: 30px;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .footer__iconos {
+        display: inline;
+    }
+}

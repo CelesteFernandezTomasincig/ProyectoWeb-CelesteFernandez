@@ -5,98 +5,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inmobiliaria Nova</title>
-    <link rel="icon" href="logo.ico">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>VALENTINO</title>
+    <!--SEO-->
+    <meta name="description" content="Marca de maquillaje orientada a dearrollar la belleza personal de cada uno">
+    <meta name="keywords" content="maquillaje, valentino, bases, rubores, sombras, makeup, bases liquidas, kit de maquillaje, kit, labiales ">
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="./sass/documento.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
 
-    <header id="header"><!--flex-->
-        <div class="header__logo">
-            <img src="./img/logo.png" alt="logo">
+    <header>
+      <nav class="navbar bg-blue fixed-top">
+        <div class="container-fluid" >
+         <img class="navbar-brand" src="./logoConNombre.png" alt="VALENTINO" height="auto" width="10%">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="./logoConNombreRed.png" alt="VALENTINO" height="auto" width="50%">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Maquillaje
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./pages/rostro.html">Rostro</a></li>
+                    <li><a class="dropdown-item" href="./pages/ojos.html">Ojos</a></li>
+                    <li><a class="dropdown-item" href="./pages/labios.html">Labios</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-            <nav class="header__menu">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/compra.html">Compra</a></li>
-                    <li><a href="./pages/venta.html">Venta</a></li>
-                    <li><a href="./pages/alquiler.html">Alquiler</a></li>
-                    <li><a href="./pages/contact.html">Contacto</a></li>
-                
-                </ul>
-            </nav>
+      </nav>
     </header>
 
-    <main id="intro">
-          <h1>Compra, venta y alquiler de inmuebles</h1>
-          <p>Inmuebles extraordinarios dirigidos y supervisados por Corredores Públicos matriculados, especializados en la compra, venta y alquiler de propiedades premium</p>
-    </main>
-
-    <section>
-        <div class="imagen1">
-          <img src="./img/imagen1.jpg" alt="intro">
-        </div>
+    <section class="video__presentacion">
+      <video src="./video/presentacionWeb.mp4" autoplay="true" muted="true" loop="true"></video>
     </section>
-
-   
+    
     <section>
-        <h2 class="servicios">Nuestros Servicios mas destacados</h2>
-         <div class="flex-container">
-                <div class="flex-item">
-                   <img src="./img/imagen2.jpg" alt="construccion">
-                    <p>¿Estas interesado/a en una inversion a futuro? Aquí podemos encontrar oportunidades únicas <a href="./pages/venta.html">Ventas</a></p>
+     <div class="container m-30 py-5">
+      <h1>QUE ES VALENTINO</h1>
+     </div>
+     </div>  
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <p>Fundada por Valentino Garavani en 1960 en Roma, la Maison Valentino nace en el patrimonio cultural de la Ciudad Eterna. Cuando el cine italiano se embarcaba en su época dorada, Valentino vestía a estrellas de la gran pantalla, desde Sophia Loren hasta Elizabeth Taylor, mientras que el icono cultural Jackie Kennedy elegía la joven casa de moda italiana como su modisto preferido.</p>
+            <p>Hoy se abre una nueva puerta a este mundo de inconformismo creativo.Valentino Beauty revela la belleza como un campo de juego abierto donde nuevos sueños cobran vida. Una invitación a la expresión individual de la diversidad y la personalidad abriendo un campo de juego de colores, matices y tonos impactantes para que todos jueguen con ellos</p>
+            <!--<p>A través de tres códigos de color, modernidad y alta costura, Valentino Beauty rompe con el estereotipo y la tradición, para ofrecer una nueva visión de la belleza donde cada uno puede celebrar su propia individualidad. Para cada momento un estado de ánimo, para cada estado de ánimo un color, Valentino Beauty imagina una colección de productos labiales como objetos de deseo en evolución, que se pueden recargar para fomentar una belleza más responsable. Con el mismo espíritu, los regalos de Valentino Beauty vienen envueltos en preciosos bolsos tote, porque la belleza también puede ser sostenible.</p>-->
+          </div>
+          <div class="col">
+          </div>
+          <div class="col">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner" class="imagen__home">
+                <div class="carousel-item active">
+                  <img src="./imagenes/home1.jpeg" class="d-block w-100" alt="...">
                 </div>
-                <div class="flex-item">
-                   <img src="img/imagen3.jpg" alt="edificio2">
-                    <p>¿Venís a estudiar a La Plata y necesitas alquilar un departamento? No te pierdas las oportunidades que brindamos <a href="./pages/alquiler.html">Alquileres</a></p>
-               </div>
-         </div>
-    
+                <div class="carousel-item">
+                  <img src="./imagenes/home2.jpeg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> 
+          </div>
+        </div>
+    </section>
+
+    <section class="titulo__primero">
+      <h2><i>Nuestros productos mas vendidos</i></h2>
     </section>
 
     <section>
-      <h3 class="trabajadores">Nuestro equipo de trabajo</h3>
-        <div class="flex-container">
-            <div class="flex-item">
-               <p>Súmate a una oficina adherida a la Red más exitosa del mundo</p> 
-               <a href="./pages/contact.html">Link formulario</a>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="./imagenes/kit completo.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Kit ALL IN ONE</h5>
+              <p class="card-text">Kit con nuestros mejores productos, inclue una base, dos labiales, iluminador y rubor</p>
+              <div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                 <button type="button" class="btn btn-outline-danger">Comprar</button>
+                </div>
+              </div>
             </div>
-            <div class="flex-item">
-              <img src="./img/imagen4.jpg" alt="trabajadores">
-            </div>
+          </div>
         </div>
+
     </section>
 
-    <!--<aside id="banner">
-        <img src=" " alt="publicidad">
-        <p></p>
-    </aside>-->
-
-    <footer id="footer">
     
-        <div class="footer__iconos">
-            <a href="https://www.instagram.com" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/725/725339.png" 
-              alt="icon-instagram" style="width: 20px;">
-            </a>
-            <a href="https://web.whatsapp.com/" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/1383/1383336.png" 
-              alt="icon-whatsapp" style="width: 20px;">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/725/725350.png" 
-              alt="icon-Facebook" style="width: 20px;">
-            </a>
-        </div>
-            <img src="./img/logo2.png" alt="logo" style="width: 60px;">
-        </div>
-        <div>
-            <p>&copy; 2022</p>
-        </div>
-    
+    <footer class="footer">
+          <div class="footer__iconos">
+              <a href="https://www.instagram.com" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/725/725339.png" 
+                alt="icon-instagram" style="width: 20px;">
+              </a>
+              <a href="https://web.whatsapp.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1383/1383336.png" 
+                alt="icon-whatsapp" style="width: 20px;">
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/725/725350.png" 
+                alt="icon-Facebook" style="width: 20px;">
+              </a>
+          </div>
+          <div>
+              <img src="./logoConNombre.png" alt="logo" style="width: 100px;">
+          </div>
+          <div>
+              <p>&copy; 2022</p>
+            </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
 </body>
 </html>
