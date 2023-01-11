@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios en Valentio</title>
+    <link rel="icon" href="../logo.png">
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-blue fixed-top">
+          <div class="container-fluid">
+            <img class="navbar-brand" src="../logoConNombre.png" alt="VALENTINO" height="auto" width="10%">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <img src="../logoConNombreRed.png" alt="VALENTINO" height="auto" width="50%">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Maquillaje
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./rostro.html">Rostro</a></li>
+                      <li><a class="dropdown-item" href="../pages/ojos.html">Ojos</a></li>
+                      <li><a class="dropdown-item" href="../pages/labios.html">Labios</a></li>
+                    </ul>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./usuarios.html">Usuarios</a>
+                    </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="titulo__primero">
+        <h2><i>Usuarios que ya eligieron Valentino</i></h2>
+      </section> 
+      <div class="container">
+        <h3>Usuarios registrados</h3>
+  
+        <div class="row">
+          <div class="col">
+            <button type="button" class="btn btn-outline-danger">Consultar</button>
+          </div>
+        </div>
+  
+        <button
+          id="showSearchingUsers"
+          style="display: none"
+          class="btn btn-outline-danger mt-2"
+          type="button"
+          disabled
+        >
+          <span
+            class="spinner-grow spinner-grow-sm"
+            role="status"
+            aria-hidden="false"
+          ></span>
+          Recuperando datos...
+        </button>
+  
+        <table class="table mt-3">
+          <thead>
+            <tr>
+              <th scope="col">Nombre</th>
+              <th scope="col">Correo electrónico</th>
+              <th scope="col">Usuario</th>
+              <th scope="col">Sitio</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+            <tr>
+              <th scope="row">1</th>
+              <td>Celeste</td>
+              <td>CFT</td>
+              <td>@rst</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      
+  
+      <script
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"
+      ></script>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"
+      ></script>
+      <script src="../scripts/usuarios.js"></script>
+</body>
+</html>

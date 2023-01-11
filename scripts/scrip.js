@@ -1,5 +1,6 @@
 // carrito
 
+
 class Producto {
     constructor(id, nombre, precio, img) {
         this.id = id;
@@ -164,3 +165,17 @@ const calcularTotal = () => {
     })
     total.innerHTML = `Total: $${totalCompra}`;
 }
+
+let btnSuccess = document.getElementById("comprarCarrito");
+btnSuccess.addEventListener("click", () => {
+    const { value: email } = Swal.fire({
+        title: 'Dinos tu e-mail',
+        input: 'email',
+        inputLabel: 'te mandaremos la factura y los medios de pago',
+        inputPlaceholder: 'e-mail'
+      })
+      
+      if (email) {
+        Swal.fire(`Entered email: ${email}`)
+      }
+});

@@ -1,28 +1,13 @@
 
-//
-let countries = ["Argentina", "Bolivia", "Chile", "Uruguay", "Otro"];
+// 
+
+let countries = ["Argentina", "Bolivia", "Chile", "Uruguay", "Estados Unidos", "Mexico", "otro"];
 let selectPaises = document.getElementById("paises");
 for (const unPais of countries) {
     let option = document.createElement("option");
     option.innerHTML = unPais;
     selectPaises.appendChild(option);
 }
-
-
-let btn = document.getElementById("enviarButton");
-btn.addEventListener("click", () => {alert("Tu formulario fue enviado correctamente"
-)})
-let btn1 = document.getElementById("enviarButton");
-btn.addEventListener("click", () => {
-    const hoy = new Date ()
-    console.log(hoy.getFullYear())
-    console.log(hoy.getMonth()+1)
-    console.log(hoy.getDay())
-    alert("La fecha que realizaste tu compra es" + hoy);
-    }
-)
-
-
 
  //Input 
 let nombre = document.getElementById("nombre");
@@ -38,7 +23,6 @@ let apellidoSummary = document.getElementById("apellidoSummary");
 let numeroSummary = document.getElementById("numeroSummary");
 let mailSummary = document.getElementById("mailSummary");
 let textoSummary = document.getElementById("textoSummary");
-
 
 
 nombre.addEventListener("change", (event) => {
@@ -60,9 +44,6 @@ mail.addEventListener("change", (event) => {
 texto.addEventListener("change", (event) => {
     console.log("--> Evento change en el input texto. ", event.target.value);
 })
-
-
-
 
 
 
