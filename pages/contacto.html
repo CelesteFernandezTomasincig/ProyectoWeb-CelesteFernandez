@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CONTACTO</title>
-        <meta name="description" content="Contactate con Valentino para lo que necesites">
-        <meta name="keywords" content="contacto, contactate, contactarse ">
+        <title>Contacto</title>
+        <meta name="description" content="Maquillaje de labios">
+        <meta name="keywords" content="labios, labiales, colores, rosso, nude rude, barra de labios">
         <link rel="icon" href="../logo.png">
         <link rel="stylesheet" href="../css/stylesheet.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-   </head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">           
+    </head>
 
 <body>
     <header>
@@ -38,8 +36,8 @@
                     </a>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="./rostro.html">Rostro</a></li>
-                      <li><a class="dropdown-item" href="../pages/ojos.html">Ojos</a></li>
-                      <li><a class="dropdown-item" href="../pages/labios.html">Labios</a></li>
+                      <li><a class="dropdown-item" href="./ojos.html">Ojos</a></li>
+                      <li><a class="dropdown-item" href="./labios.html">Labios</a></li>
                     </ul>
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contacto</a>
@@ -54,117 +52,66 @@
           </div>
         </nav>
       </header>
+      <body>
 
-    <main class="titulo__primero">
-        <h2><i>Contactate con Nosotros!</i></h2>
-    </main>
+        <main class="titulo__primero">
+          <h2><i>Contactate con Nosotros!</i></h2>
+      </main> 
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="inputPassword4" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Direccion</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Codigo Postal</label>
+            <input type="number" class="form-control" id="inputAddress2" placeholder="solo numeros" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="inputCity" required>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">¿Como nos conociste?</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>Redes Sociales</option>
+              <option>Tienda física</option>
+              <option>Me hablaron de la marca</option>
+
+            </select>
+          </div>
+          <!--<div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>-->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Quiero recibir promociones por email!
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-danger">Enviar</button>
+          </div>
+        </form>
+        
+    </body>
+    
+    </html>
     
 
-    <div class="mb-2">
-      <label for="nombre" class="form-label"></label>
-      <input type="name" class="form-control" id="nombre" placeholder="Nombre">
-    </div>
-    <div class="mb-2">
-      <label for="apellido" class="form-label"></label>
-      <input type="name" class="form-control" id="apellido" placeholder="Apellido">
-    </div>
-    <div class="mb-2">
-      <label for="numero" class="form-label"></label>
-      <input type="number" class="form-control" id="numero" placeholder="Numero">
-    </div>
-     <div class="mb-2">
-      <label for="mail" class="form-label"></label>
-      <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
-    </div>
-    <div class="mb-2">
-    <select class="form-select" aria-lebel="Default select example" id="paises">
-      <option selected>¿De que pais eres?</option>
-    </select>
-    </div>
-    <div class="mb-2">
-      <label for="texto" class="form-label"></label>
-      <textarea class="form-control" id="texto" rows="3" placeholder="Cual es tu consulta?"></textarea>
-    </div>
-    
-      <div class="button__contacto">
-        <div class="d-grid gap-2 col-6 mx-auto">
-         <button id="enviarButton" type="button" class="btn btn-outline-danger">Enviar</button>
-        </div>
-      </div>
-      <section>
-      <div class="container">
-        <div class="row mt-1 mb-1"> 
-          <div class="col">
-            <strong>Nombre:</strong>
-          </div>
-          <div class="col">
-            <p id="nombreSummary"></p>
-         </div>
-      </div>
-      </div>
-  
-      <div class="container">
-        <div class="row mt-1 mb-1"> 
-          <div class="col">
-            <strong>Apellido:</strong>
-          </div>
-          <div class="col">
-            <p id="apellidoSummary"></p>
-         </div>
-      </div>
-      </div>
-
-      <div class="container">
-        <div class="row mt-1 mb-1"> 
-          <div class="col">
-            <strong>Numero:</strong>
-          </div>
-          <div class="col">
-            <p id="numeroSummary"></p>
-         </div>
-      </div>
-      </div>
-
-      <div class="container">
-        <div class="row mt-1 mb-1"> 
-          <div class="col">
-            <strong>mail:</strong>
-          </div>
-          <div class="col">
-            <p id="mailSummary"></p>
-         </div>
-      </div>
-      </div>
-  
-    </section>
-  
-
-    <!--contenido de la pagina-->
-    <footer class="footerContacto">
-        <div class="footer__iconos">
-            <a href="https://www.instagram.com" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/725/725339.png" 
-              alt="icon-instagram" style="width: 20px;">
-            </a>
-            <a href="https://web.whatsapp.com/" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/1383/1383336.png" 
-              alt="icon-whatsapp" style="width: 20px;">
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <img src="https://cdn-icons-png.flaticon.com/512/725/725350.png" 
-              alt="icon-Facebook" style="width: 20px;">
-            </a>
-        </div>
-        <div>
-            <img src="../logoConNombre.png" alt="logo" style="width: 100px;">
-        </div>
-        <div>
-            <p>&copy; 2022</p>
-          </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://moment.github.io/luxon/#/?id=luxon"></script>
-    <script src="../scripts/formulario.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -26,7 +26,6 @@ function renderUsersTableDetails(users = []) {
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((json) => {
-    console.log(json);
     showSearchingUsers.style.display = "block";
 
     renderUsersTableDetails(json);
