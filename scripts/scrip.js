@@ -7,7 +7,7 @@ const containerCartProducts = document.querySelector(
 
 btnCart.addEventListener('click', () => {
 	containerCartProducts.classList.toggle('hidden-cart');
-})
+});
 
 /* ========================= */
 const cartInfo = document.querySelector('.cart-product');
@@ -126,3 +126,14 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+  let btnSuccess = document.getElementById("botonEnviar");
+btnSuccess.addEventListener("click", () => {
+	swal.fire({
+		title: "Correcto!",
+		text: "Tu compra fue registrada",
+		icon: "success",
+		confirmButtonText: "Gracias!",
+	  });
+	});
+	

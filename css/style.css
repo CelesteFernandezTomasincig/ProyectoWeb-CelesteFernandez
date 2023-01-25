@@ -200,3 +200,10 @@
  .hidden{
      display: none;
  }
+
+ .botonSubmit {
+    padding: 100px;
+    display: grid;
+    justify-content: center;
+
+ }
