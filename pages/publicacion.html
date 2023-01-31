@@ -87,7 +87,7 @@
 
 				<div class="container-cart-products hidden-cart">
 					<div class="row-product hidden">
-						<div class="cart-product">
+						<div class="cart-product">		
 							<div class="info-cart-product">
 								<span class="cantidad-producto-carrito">1</span>
 								<p class="titulo-producto-carrito">Base Liquid</p>
@@ -110,11 +110,17 @@
 						</div>
 					</div>
 
+					
 					<div class="cart-total hidden">
 						<h3>Total:</h3>
 						<span class="total-pagar">200</span>
+						<button id="botonEnviar" class="button-buy"><p>Comprar</p></button>
 					</div>
 					<p class="cart-empty">El carrito está vacío</p>
+					<div class="cart-delete">
+						<button class="button" class="btn-delete-all" onclick="deleteAllProducts()"><p>Eliminar porductos del carrito</p></button>
+					</div>
+					
 				</div>
 			</div>
 		</header>
@@ -252,9 +258,6 @@
 		</div>
 
 
-		<div class="botonSubmit">
-		<button id="botonEnviar" type="button" class="btn btn-danger" >Comprar Carrito</button>
-	    </div>
 
    <!-- JavaScript Bundle with Popper -->
 

@@ -26,6 +26,7 @@ const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+
 productsList.addEventListener('click', e => {
 	if (e.target.classList.contains('btn-add-cart')) {
 		const product = e.target.parentElement;
@@ -82,6 +83,7 @@ const showHTML = () => {
 		cartEmpty.classList.add('hidden');
 		rowProduct.classList.remove('hidden');
 		cartTotal.classList.remove('hidden');
+		
 	}
 
 	// Limpiar HTML
@@ -127,13 +129,22 @@ const showHTML = () => {
 	countProducts.innerText = totalOfProducts;
 };
 
-  let btnSuccess = document.getElementById("botonEnviar");
-btnSuccess.addEventListener("click", () => {
+/* Buy button */
+
+let btnSuccess = document.getElementById("botonEnviar");
+btnSuccess.addEventListener('click', () => {
 	swal.fire({
-		title: "Correcto!",
+		title: "Genial!",
 		text: "Tu compra fue registrada",
 		icon: "success",
 		confirmButtonText: "Gracias!",
-	  });
-	});
-	
+ });
+});
+
+
+
+const deleteAllProducts = () => {
+	allProducts = [];
+	showHTML();
+}
+
