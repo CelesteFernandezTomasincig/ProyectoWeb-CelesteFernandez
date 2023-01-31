@@ -141,8 +141,6 @@ btnSuccess.addEventListener('click', () => {
  });
 });
 
-
-
 const deleteAllProducts = () => {
 	allProducts = [];
 	showHTML();
